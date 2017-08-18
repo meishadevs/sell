@@ -3,10 +3,10 @@
  */
 
 // 依赖的文件
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 // 实例化了一个Vue实例
 /* eslint-disable no-new */

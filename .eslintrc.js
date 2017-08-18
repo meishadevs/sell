@@ -29,5 +29,12 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
 
     //如果代码末尾没加分好，就报错
+    'semi': ['error', 'always'],
+
+    // 代码不缩进
+    'indent': 0,
+
+    // 不检查函数名与圆括号之间的空格
+    'space-before-function-paren': 0
   }
 }
