@@ -2,14 +2,22 @@
 // 检查 Node 和 npm 版本
 require('./check-versions')()
 
+// 设置环境为生产环境
 process.env.NODE_ENV = 'production'
 
+// 使用 ora, ora可以优雅的在命令行中展示执行命令后的提示信息
 var ora = require('ora')
+
+//  使用 rimraf 后可以在 Node.js 中使用 rm -rf 命令
 var rm = require('rimraf')
 
 // 使用 Node.js 自带的文件路径插件
 var path = require('path')
+
+// 使用 chalk 可以改变命令行中字符串的风格
 var chalk = require('chalk')
+
+// 使用 Webpack
 var webpack = require('webpack')
 
 // 加载 config.js 中的配置信息
