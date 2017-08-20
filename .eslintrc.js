@@ -31,10 +31,16 @@ module.exports = {
     //如果代码末尾没加分好，就报错
     'semi': ['error', 'always'],
 
-    // 代码不缩进
+    // 不检测代码是否缩进了
     'indent': 0,
 
     // 不检查函数名与圆括号之间的空格
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+
+    // 不检测变量声明后是否使用了
+    'no-unused-vars': 0,
+
+    //不检测代码中是否有空行
+    'no-trailing-spaces': 0
   }
 }

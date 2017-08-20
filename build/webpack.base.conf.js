@@ -70,14 +70,16 @@ module.exports = {
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
-
       {
         // 对 src 和 test 文件夹下的 .js 文件使用 babel-loader
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')]
       },
-
+      {
+        test: /\.styl$/,
+        loaders: ['style', 'css', 'stylus']
+      },
       {
         // 对图片资源文件使用 url-loader，query.name 指明了输出的命名规则
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
