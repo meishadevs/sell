@@ -41,6 +41,10 @@ module.exports = {
     'no-unused-vars': 0,
 
     //不检测代码中是否有空行
-    'no-trailing-spaces': 0
+    'no-trailing-spaces': 0,
+
+    'spaced-comment': 0,
+
+    'padded-blocks': 0
   }
 }

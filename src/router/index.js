@@ -4,17 +4,22 @@
 
 // 添加依赖
 import Vue from 'vue';
-import Router from 'vue-router';
+import VueRouter from 'vue-router';
 
 // 引入组件，供路由使用
 import goods from '../component/goods/goods.vue';
 import ratings from '../component/ratings/ratings.vue';
 import seller from '../component/seller/seller.vue';
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
-export default new Router({
+export default new VueRouter({
+  linkActiveClass: 'active',
   routes: [
+    {
+      path: '/',
+      component: goods
+    },
     {
       path: '/goods',
       name: 'goods',

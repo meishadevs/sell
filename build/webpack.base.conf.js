@@ -46,7 +46,9 @@ module.exports = {
     // 创建路径别名，有了别名之后引用模块更方便
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'components': path.resolve(__dirname, '../src/component')
+      // 'common': path.resolve(__dirname, '../src/common')
     }
   },
 
@@ -76,10 +78,10 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')]
       },
-      {
-        test: /\.styl$/,
-        loaders: ['style', 'css', 'stylus']
-      },
+      // {
+      //   test: /\.styl$/,
+      //   loaders: ['style', 'css', 'stylus']
+      // },
       {
         // 对图片资源文件使用 url-loader，query.name 指明了输出的命名规则
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
