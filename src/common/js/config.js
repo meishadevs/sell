@@ -4,7 +4,6 @@
 
 export default {
   install(Vue, option) {
-
-    //服务器端的Url
+    Vue.prototype.ERR_OK = 0;
   }
 };

@@ -24,8 +24,6 @@
   // 引入header组件
   import header from './component/header/header.vue';
 
-  const ERR_OK = 0;
-
   export default {
 
     data() {
@@ -40,7 +38,7 @@
       })
       .then(response => {
         response = response.data;
-        if (response.errno === ERR_OK) {
+        if (response.errno === this.ERR_OK) {
           this.seller = response.data;
         }
       })

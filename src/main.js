@@ -8,15 +8,18 @@ import App from './App.vue';
 import router from './router';
 import axios from 'axios';
 import qs from 'qs';
-import './js/config';
+import config from './common/js/config';
 import './common/stylus/index.styl';
+
+//使用插件
+Vue.use(config);
 
 Vue.config.productionTip = false;
 Vue.prototype.axios = axios;
 Vue.prototype.qs = qs;
 
-/* eslint-disable no-new */
-new Vue({
+//创建Vue实例
+var app = new Vue({
   el: '#app',
   router,
   template: '<App/>',
